@@ -9,14 +9,16 @@
   top: 35px;
 }
 
+
 .tags {
   color: #ffd700;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
   left: 120px;
-  font-size: 18px;
-  font-family: 'Basis 33';
+  font-size: 14px;
+  font-family: 'Source Code Pro';
+  margin-bottom: 20px;
 }
 
 .bottom-tag-html {
@@ -40,6 +42,7 @@
 
 .container.contact-page,
 .container.about-page,
+.container.skills-page,
 .container.portfolio-page {
   
     h1 {
@@ -54,9 +57,9 @@
 
       &:before {
         content: '<h1>';
-        font-family: 'Basis 33';
+        font-family: 'Source Code Pro', cursive;
         color: #ffd700;
-        font-size: 18px;
+        font-size: 14px;
         position: absolute;
         margin-top: -10px;
         left: -10px;
@@ -66,9 +69,9 @@
 
       &:after {
         content: '<h1/>';
-        font-family: 'Basis 33';
+        font-family: 'Source Code Pro', cursive;
         color: #ffd700;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 18px;
         position: absolute;
         left: -30px;
@@ -126,6 +129,8 @@
 
     &.contact-page,
     &.about-page,
+    &.skills-page,
+
     &.portfolio-page {
       .text-zone {
         position: initial;

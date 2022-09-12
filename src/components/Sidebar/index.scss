@@ -98,6 +98,12 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
     a.portfolio-link {
       &:after {
         content: 'PORTFOLIO';

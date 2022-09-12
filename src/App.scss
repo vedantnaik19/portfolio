@@ -10,10 +10,10 @@ $primary-color: #ffd700;
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Basis 33';
-  src: url('./assets/fonts/basis33.ttf') format('ttf');
+  font-family: 'Source Code Pro';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
+    url('./assets/fonts/LaBelleAurore.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

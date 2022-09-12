@@ -18,6 +18,8 @@ import {
   faClose,
   faBarsProgress,
   faChartLine,
+  faLineChart,
+  faWrench,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -55,7 +57,7 @@ const Sidebar = () => {
           to="/portfolio"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faChartLine} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLineChart} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -64,6 +66,14 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="skills-link"
+          to="/skills"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faWrench} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"

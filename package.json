@@ -1,7 +1,6 @@
 {
   "name": "react-portfolio-website",
   "version": "0.1.0",
-  "homepage": "https://vedantnaik19.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
@@ -23,7 +22,9 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-tagcloud": "^2.3.1",
     "sass": "^1.49.9",
+    "three": "^0.144.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
