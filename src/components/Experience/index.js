@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import LogoTitle from '../../assets/images/logo-v.png'
+import LogoTitle from "../../assets/images/logo-v.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faHammer } from "@fortawesome/free-solid-svg-icons";
 
-
-const Portfolio = () => {
+export default function Experience() {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -22,11 +21,11 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="container portfolio-page">
+      <div className="container experience-page">
         <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"Portfolio".split("")}
+            strArray={"Experience".split("")}
             idx={15}
           />
         </h1>
@@ -44,17 +43,18 @@ const Portfolio = () => {
               </a>
             </div>
           </div>*/}
-          <p> <FontAwesomeIcon
-                icon={faHammer}
-                color="#"
-                className="anchor-icon"
-              />  Under Construction</p>
-        </div> 
-
+          <p>
+            {" "}
+            <FontAwesomeIcon
+              icon={faHammer}
+              color="#"
+              className="anchor-icon"
+            />{" "}
+            Under Construction
+          </p>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
   );
-};
-
-export default Portfolio;
+}

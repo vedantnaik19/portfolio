@@ -94,7 +94,7 @@ export default function Sphere() {
         const alpha = 0.3 + 0.4 * (x / radius);
         const size = fontSize + 2 + 5 * (x / radius);
         ctx.fillStyle = `rgba(255,255,255,${alpha})`;
-        ctx.font = `${size}px "Source Code Pro", sans-serif`;
+        ctx.font =  `900 ${size}px "Helvetica Neue", sans-serif`;
         // ctx.font.style.fontWeight = "900";
         ctx.fillText(text, y + width / 2, -z + height / 2);
 
@@ -149,14 +149,16 @@ export default function Sphere() {
       "PostgreSQL",
       "MongoDB",
       "Firebase",
-      "TensorFlow",
       "Angular",
       "Git",
       "Express.js",
       "Node.js",
-      "SQL",
+      "Figma",
       "Bootstrap",
       "ML",
+      "REST",
+      "Redux",
+      "GetX"
     ];
     const counts = [1, 2, 4, 5, 4, 2, 1];
 

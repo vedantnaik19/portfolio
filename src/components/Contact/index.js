@@ -92,9 +92,9 @@ const Contact = () => {
         <div className="info-map">
           Vedant Naik,
           <br />
-          10E Nelson Court, UEA <br />
-          Norwich NR4 7TJ,
-          <br />
+         
+          Norwich,
+          
           United Kingdom.
           <br />
           <span>vedantnaik19@gmail.com</span>

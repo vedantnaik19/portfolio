@@ -21,7 +21,9 @@ body {
     rgba(15, 15, 59, 1) 100%
   );
   animation: AnimateBG 20s ease infinite; */
+  
 }
+
 @keyframes AnimateBG {
   0% {
     background-position: 0% 50%;

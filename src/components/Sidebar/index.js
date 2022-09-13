@@ -1,14 +1,14 @@
-import './index.scss'
-import { useState } from 'react'
-import LogoV from '../../assets/images/logo-v.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./index.scss";
+import { useState } from "react";
+import LogoV from "../../assets/images/logo-v.png";
+import LogoSubtitle from "../../assets/images/logo_sub.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
   faYoutube,
   faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faUser,
@@ -20,11 +20,11 @@ import {
   faChartLine,
   faLineChart,
   faWrench,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">
@@ -34,7 +34,7 @@ const Sidebar = () => {
         onClick={() => setShowNav(false)}>
         <img src={LogoV} alt="Logo" />
       </Link> */}
-      <nav className={showNav ? 'mobile-show' : ''}>
+      <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
           exact="true"
           activeclassname="active"
@@ -54,7 +54,7 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="experience-link"
-          to="/portfolio"
+          to="/experience"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faLineChart} color="#4d4d4e" />
@@ -127,7 +127,7 @@ const Sidebar = () => {
         className="hamburger-icon"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

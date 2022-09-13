@@ -18,7 +18,7 @@
   left: 120px;
   font-size: 14px;
   font-family: 'Source Code Pro';
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .bottom-tag-html {
@@ -42,6 +42,7 @@
 
 .container.contact-page,
 .container.about-page,
+.container.experience-page,
 .container.skills-page,
 .container.portfolio-page {
   
@@ -82,7 +83,7 @@
     }
 
     p {
-      font-size: 13px;
+      font-size: 15px;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
@@ -101,7 +102,7 @@
 
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 13%;
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
@@ -130,7 +131,7 @@
     &.contact-page,
     &.about-page,
     &.skills-page,
-
+    &.experience-page,
     &.portfolio-page {
       .text-zone {
         position: initial;
@@ -141,6 +142,8 @@
         box-sizing: border-box;
       }
     }
+
+    &.experience-page,
 
     &.portfolio-page {
       width: 100%;

@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-import Loader from "react-loaders"
-import AnimatedLetters from "../AnimatedLetters"
-import Sphere from "../Sphere"
-import "./index.scss"
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import Sphere from "../Sphere";
+import "./index.scss";
 
 const Skills = () => {
-  const [letterClass, setLetterClass] = useState("text-animate")
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     return setTimeout(() => {
-      setLetterClass("text-animate-hover")
-    }, 3000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -26,31 +26,21 @@ const Skills = () => {
             />
           </h1>
           <p>
-            I got a master's degree in computing science from the University of
-            East Anglia. and am presently looking for a job at an established IT
-            firm where I can work with cutting-edge technology on challenging
-            and diversified projects.
+            I have firsthand knowledge of technologies such as the MERN stack,
+            MEAN stack, and PERN stack. In addition, I have created mobile apps
+            with Flutter. I am not a designer, but I have a fair understanding
+            of UI/UX design and use Figma to create it.
           </p>
           <p align="LEFT">
-            I have three years of expertise in full-stack development and have
-            built and deployed applications for a few small businesses, I have
-            also co-founded three startups in the micro-mobility, food delivery,
-            and IoT sectors. I've worked in software development, mobile app
-            development, front-end/back-end development, database/server
-            administration and UI design.{" "}
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a
-            confident, calm, and curious individual who enjoys learning new
-            things.
+            Besides, I also have experience with Python, Android, Bootstrap,
+            Firebase, Git and ML.
           </p>
         </div>
-        <Sphere className="skills-cloud"/>
-
+        <Sphere className="skills-cloud" />
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
